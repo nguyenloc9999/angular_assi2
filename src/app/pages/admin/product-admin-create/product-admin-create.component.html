@@ -1,0 +1,9 @@
+<div class="container">
+  <form [formGroup]="productForm" (ngSubmit)="onHandleSubmit()">
+    <input type="text" formControlName="name" />
+    <input type="number" formControlName="price" />
+    <textarea type="text"></textarea>
+    <img type="file" />
+    <button type="submit" [disabled]="!productForm.valid">Thêm</button>
+  </form>
+</div>
