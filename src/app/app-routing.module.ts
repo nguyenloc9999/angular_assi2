@@ -19,7 +19,7 @@ const routes: Routes = [
   // Ứng dụng phía máy chủ: (admin)
    {
      path: 'admin',
-     component: ProductAdminListComponent,
+     component: LayoutAdminComponent,
      children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       { path: 'dashboard', component: DashboardComponent },

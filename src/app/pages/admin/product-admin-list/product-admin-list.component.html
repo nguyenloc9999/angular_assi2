@@ -22,7 +22,7 @@
     </div>
   </div> -->
 
-    <a class="btn btn-primary" routerLink="product-create">Create New</a>
+    <a class="btn btn-primary" routerLink="/admin/product-create">Create New</a>
     <table class="table">
       <thead>
         <tr>
@@ -42,9 +42,9 @@
           <td>{{ product.description }}</td>
           <td><img style="width: 54px; height: 54px;" src="{{ product.imgUrl }}" /></td>
           <td style="display: flex;">
-            <a style="width: 60px; height: 60px; margin-right: 20px; padding-left: 8px;" class="btn btn-secondary" [routerLink]="'product-detail/' + product.id">View Detail</a>
+            <a style="width: 60px; height: 60px; margin-right: 20px; padding-left: 8px;" class="btn btn-secondary" [routerLink]="'/admin/product-detail/' + product.id">View Detail</a>
             <button class="btn btn-danger" (click)="delete(product.id!)">Xóa</button>
-            <a style="width: 74px; padding-top: 20px; margin-left: 20px;" class="btn btn-success" [routerLink]="'products-update/' + product.id">Update</a>
+            <a style="width: 74px; padding-top: 20px; margin-left: 20px;" class="btn btn-success" [routerLink]="'/admin/products-update/' + product.id">Update</a>
           </td>
         </tr>
       </tbody>

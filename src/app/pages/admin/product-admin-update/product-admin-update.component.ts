@@ -3,6 +3,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { IProduct } from '../interface/IProduct';
 import { ProductAdminService } from '../services/product-admin.service';
+import { Navigation } from '@angular/router';
 
 @Component({
   selector: 'app-product-admin-update',
@@ -33,6 +34,8 @@ export class ProductAdminUpdateComponent {
           this.productForm.patchValue({
             name: data.name,
             price: data.price,
+            description: data.description,
+            imgUrl: data.imgUrl
           });
         },
         (error) => console.log(error.message)
