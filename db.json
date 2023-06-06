@@ -88,8 +88,16 @@
   "users": [
     {
       "id": "1",
+      "email": "",
       "username": "hoangnm",
       "password": "1234567"
+    },
+    {
+      "id": "4x_LlIf",
+      "username": "eeeee",
+      "email": "admin18@gmail.com",
+      "password": "123456"
     }
+   
   ]
 }

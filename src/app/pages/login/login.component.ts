@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-
+import { IUser } from '../admin/interface/IUser';
+import { AuthAdminService } from '../admin/services/auth-admin.service';
+import { UntypedFormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -7,12 +10,21 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
   credentials= {
-    username : '',
+    email : '',
     password: '',
   };
+  user : IUser | undefined
 
-  onSubmit() {
-    console.log('Login submitted: ', this.credentials);
+  constructor(
+    private userServiec: AuthAdminService,
+    private router: Router
+  ) {
   }
 
+  onSubmit() {
+    this.userServiec.login(this.credentials.email).subscribe(user=>{
+      this.user= user
+      console.log(user);
+    })
+  }
 }
