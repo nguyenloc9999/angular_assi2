@@ -12,9 +12,15 @@ import { ProductAdminListComponent } from './pages/admin/product-admin-list/prod
 import { ProductAdminCreateComponent } from './pages/admin/product-admin-create/product-admin-create.component';
 import { ProductAdminUpdateComponent } from './pages/admin/product-admin-update/product-admin-update.component';
 import { ProductAdminDetailComponent } from './pages/admin/product-admin-detail/product-admin-detail.component';
-import { ProductAdminLoginComponent } from './pages/admin/product-admin-login/product-admin-login.component';
-import { ProductAdminRegisterComponent } from './pages/admin/product-admin-register/product-admin-register.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
+import { LoginAdminListComponent } from './pages/admin/login-admin-list/login-admin-list.component';
+import { LoginAdminCreateComponent } from './pages/admin/login-admin-create/login-admin-create.component';
+import { LoginAdminUpdateComponent } from './pages/admin/login-admin-update/login-admin-update.component';
+import { LoginAdminDetailComponent } from './pages/admin/login-admin-detail/login-admin-detail.component';
+import { RegisterAdminListComponent } from './pages/admin/register-admin-list/register-admin-list.component';
+import { RegisterAdminCreateComponent } from './pages/admin/register-admin-create/register-admin-create.component';
+import { RegisterAdminUpdateComponent } from './pages/admin/register-admin-update/register-admin-update.component';
+import { RegisterAdminDetailComponent } from './pages/admin/register-admin-detail/register-admin-detail.component';
 const routes: Routes = [
   // Ứng dụng phía máy chủ: (admin)
    {
@@ -22,13 +28,19 @@ const routes: Routes = [
      component: LayoutAdminComponent,
      children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-      { path: 'dashboard', component: DashboardComponent },
+      { path: 'dashboard', component: ProductAdminListComponent },
       { path: 'product-list', component: ProductAdminListComponent },
       { path: 'product-create', component: ProductAdminCreateComponent },
       { path: 'products-update/:id', component: ProductAdminUpdateComponent },
       { path: 'product-detail/:id', component: ProductAdminDetailComponent },
-      { path: 'login', component: ProductAdminLoginComponent },
-      { path: 'register', component: ProductAdminRegisterComponent },
+     {path: 'login-list', component: LoginAdminListComponent},
+     {path: 'login-create', component: LoginAdminCreateComponent},
+     {path: 'login-update/:id', component: LoginAdminUpdateComponent},
+     {path: 'login-detail/:id', component: LoginAdminDetailComponent},
+     {path: 'register-list', component: RegisterAdminListComponent},
+     {path: 'register-create', component: RegisterAdminCreateComponent},
+     {path: 'register-update/:id', component: RegisterAdminUpdateComponent},
+     {path: 'register-detail/:id', component: RegisterAdminDetailComponent}
      ],
      
    },

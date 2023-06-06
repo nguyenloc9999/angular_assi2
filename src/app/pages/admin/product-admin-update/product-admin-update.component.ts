@@ -3,7 +3,6 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { IProduct } from '../interface/IProduct';
 import { ProductAdminService } from '../services/product-admin.service';
-import { Navigation } from '@angular/router';
 
 @Component({
   selector: 'app-product-admin-update',
