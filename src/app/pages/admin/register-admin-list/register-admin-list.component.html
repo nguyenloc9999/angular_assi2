@@ -1,23 +1,19 @@
 <a class="btn btn-primary" routerLink="/admin/register-create">Create New</a>
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">STT</th>
-          <th scope="col">Username</th>
-          <th scope="col">Password</th>
-          <th scope="col">Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let user of users; index as i">
-          <th scope="row">{{ i + 1 }}</th>
-          <td>{{ user.username }}</td>
-          <td>{{ user.password }}</td>
-          <td style="display: flex;">
-            <a style="width: 60px; height: 60px; margin-right: 20px; padding-left: 8px;" class="btn btn-secondary" [routerLink]="'/admin/register-detail/' + user.id">View Detail</a>
-            <button class="btn btn-danger" (click)="delete(user.id!)">Xóa</button>
-            <a style="width: 74px; padding-top: 20px; margin-left: 20px;" class="btn btn-success" [routerLink]="'/admin/register-update/' + user.id">Update</a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">STT</th>
+      <th scope="col">Username</th>
+      <th scope="col">Password</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users; index as i">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ user.username }}</td>
+      <td>{{ user.password }}</td>
+    </tr>
+  </tbody>
+</table>
+
+  

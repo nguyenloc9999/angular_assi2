@@ -16,12 +16,8 @@ export class AuthAdminService {
   getUserById(id: string): Observable<IUser> {
     return this.http.get<IUser>(`${this.API}/${id}`);
   }
-
   addUser(user: IUser): Observable<IUser> {
     return this.http.post<IUser>(`${this.API}`, user);
-  }
-  updateUser(user: IUser): Observable<IUser> {
-    return this.http.put<IUser>(`${this.API}/${user.id}`, user);
   }
   deleteUser(id: string): Observable<IUser> {
     return this.http.delete<IUser>(`${this.API}/${id}`);

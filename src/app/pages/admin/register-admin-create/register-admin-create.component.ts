@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
+import { IUser } from '../interface/IUser';
 import { UntypedFormBuilder, Validators } from '@angular/forms';
 import { AuthAdminService } from '../services/auth-admin.service';
-import { IUser } from '../interface/IUser';
 
 @Component({
   selector: 'app-register-admin-create',
@@ -10,8 +10,8 @@ import { IUser } from '../interface/IUser';
 })
 export class RegisterAdminCreateComponent {
   userForm = this.formBuilder.group({
-    username: ['', [Validators.required, Validators.minLength(4)]],
-    password: ['', [Validators.required, Validators.minLength(6)]],
+    username: ['', [Validators.required]],
+    password: ['', [Validators.required]],
   });
 
   constructor(
@@ -22,11 +22,11 @@ export class RegisterAdminCreateComponent {
     const user: IUser = {
       id: '',
       username: this.userForm.value.username || '',
-      password: this.userForm.value.password || 0,
+      password: this.userForm.value.password || '',
     };
 
     this.userService.addUser(user).subscribe((user) => {
-      alert(`Thêm sản phẩm thành công: ${user.username}`);
+      alert(`Thêm thành công: ${user.username}`);
     });
   }
 }
