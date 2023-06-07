@@ -1,23 +1,50 @@
-<section id="home-section">
+<div class="features">
   <div class="container">
-    <div class="row" *ngIf="products && products.length; else elseBlock">
-      <div class="col-4" *ngFor="let product of products | paginate: { itemsPerPage: 6, currentPage: p }" style="margin-top: 40px; padding-left: 40px; padding-bottom: 40px;">
-        <div class="card" style="width: 18rem">
-          <div class="card-body" style="height: 524px;">
-            <a href="product/{{product.id}}">
-              <img src="{{ product.imgUrl }}" alt="" class="card-img-top" />
-            </a>
-            <h5 class="card-title">{{ product.name }}</h5>
-            <p class="card-text">Giá: {{ product.price }} đ</p>
-            <p class="card-text">Mô tả sản phẩm: {{ product.description }}</p>
-            <div class="text-sm-start">
-              <button type="button" class="btn btn-danger" style="width: 100px; justify-content: center;">Mua</button>
-            </div>
+      <div class="wrapper">
+          <div class="sectop flexitem">
+              <h2><span class="circle"></span><span>featured product</span></h2>
+              <div class="second-links">
+                  <a href="" class="view-all">View all<i class="ri-arrow-right-line"></i></a>
+              </div>
           </div>
-        </div>
+          <div class="column">  
+         
+              <div class="products main flexwrap" *ngIf="products && products.length; else elseBlock " >
+                  <div class="item" *ngFor="let product of products | paginate: { itemsPerPage: 10, currentPage: p }" >
+                      <div class="products main media">
+                          <div class="thumbnail object-cover">
+                              <a href="#">
+                                  <img src="{{product.imgUrl}}" alt="">
+                              </a>
+                          </div>
+                          <div class="hoverable">
+                              <ul>
+                                  <li class="active"><a href="#"><i class="ri-heart-line"></i></a>
+                                  </li>
+                                  <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                  <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                              </ul>
+                          </div>
+                          <div class="discount circle flexcenter"><span>31</span></div>
+                      </div>
+                      <div class="content">
+                          <div class="rating">
+                              <div class="stars"></div>
+                              <span class="mini-text">(2,548)</span>
+                          </div>
+                          <h3><a href="#">{{product.name}}</a></h3>
+
+                              <div class="price">
+                                  <span class="current">$ {{product.price}}</span>
+                                  <span class="normal mini-text">$189,98</span>
+                              </div>
+                      </div>
+                  </div>       
+              </div>
+              <pagination-controls style="text-align: center;" (pageChange) = "p = $event"></pagination-controls>
+              <ng-template #elseBlock>Không tìm thấy sản phẩm!</ng-template>
+              
+          </div>
       </div>
-    </div>
-    <pagination-controls style="text-align: center;" (pageChange) = "p = $event"></pagination-controls>
-    <ng-template #elseBlock>Không tìm thấy sản phẩm!</ng-template>
   </div>
-</section>
+</div>

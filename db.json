@@ -35,27 +35,7 @@
       "description": "Nike Jordan 1 Retro High OG “Stealth” sở hữu 2 tông màu là xám và trắng làm từ da mũi giày đục lỗ và Swoosh màu xám, Wings tinh tế được dập chìm ",
       "imgUrl": "https://giayxshop.vn/wp-content/uploads/2019/02/z3647648377271_1766387b92c7ca8dbc78c79a074d5e1c.jpg"
     },
-    {
-      "id": "6",
-      "name": "Giày New Balance",
-      "price": 600,
-      "description": "Giày New Balance 327 Timberwolf Nightwatch Green có phần trên bằng nylon và da lộn đóng vai trò lớp nền, được phủ lên bằng những tấm da lộn",
-      "imgUrl": "https://cdn.vuahanghieu.com/unsafe/0x900/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2022/11/giay-the-thao-new-balance-550-white-green-bb550wt1-mau-trang-xanh-size-38-6369c02676e9e-08112022093414.jpg"
-    },
-    {
-      "id": "7",
-      "name": "Giày Balenciaga",
-      "price": 500,
-      "description": "Giày Balenciaga Triple S – Màn khai pháo đã mang Balenciaga – một thương hiệu thời trang cao cấp lần đầu tiên đặt chân lên vùng đất Sneaker màu mỡ",
-      "imgUrl": "https://kiza.vn/media/wysiwyg/Giay-balenciaga-triple-s-vang-02.jpg"
-    },
-    {
-      "id": "8",
-      "name": "Giày Vans",
-      "price": 400,
-      "description": "Sử dụng thiết kế cổ điển với gam màu đen trắng đơn giản, kết hợp chất liệu vải Canvas cùng Da lộn ở mũi và gót giày, Vans Old Skool Classic Black White",
-      "imgUrl": "https://kiza.vn/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/v/a/vans-old-phoi-mau-den-trang-004.jpg"
-    },
+   
     {
       "id": "9",
       "name": "Giày MLB",
@@ -79,10 +59,10 @@
     },
     {
       "id": "12",
-      "name": "Giày Puma",
-      "price": 600,
-      "description": "Giày Puma X Ray Trainers là một trong mẫu giày thể thao có có thiết kế đơn giản mà rất tinh tế. Một mẫu giày mà bạn có thế sử dụng trong mọi hoạt động",
-      "imgUrl": "https://kiza.vn/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/p/u/puma-trang-den-01.jpg"
+      "name": "Giày Converse",
+      "price": 800,
+      "description": "Chuck Taylor đã là hình ảnh thu nhỏ của sự cool ngầu trong hơn 100 năm – giờ đây, với công nghệ cải tiến hơn, Chuck 70 At – Cx ",
+      "imgUrl": "https://capvirgo.com/wp-content/uploads/2023/02/wsxc1676111088796_7.jpg"
     }
   ],
   "users": [

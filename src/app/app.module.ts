@@ -26,6 +26,8 @@ import { SidebarAdminComponent } from './components/sidebar-admin/sidebar-admin.
 import { LayoutComponent } from './layouts/layout/layout.component';
 import { LayoutAdminComponent } from './layouts/layout-admin/layout-admin.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
+import { Home1Component } from './pages/home1/home1.component';
+import { Header1Component } from './components/header1/header1.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { DashboardComponent } from './pages/admin/dashboard/dashboard.component'
     SidebarAdminComponent,
     LayoutComponent,
     LayoutAdminComponent,
-    DashboardComponent
+    DashboardComponent,
+    Home1Component,
+    Header1Component
   ],
   imports: [
     BrowserModule,
