@@ -15,6 +15,7 @@ import { ProductAdminDetailComponent } from './pages/admin/product-admin-detail/
 import { ProductAdminLoginComponent } from './pages/admin/product-admin-login/product-admin-login.component';
 import { ProductAdminRegisterComponent } from './pages/admin/product-admin-register/product-admin-register.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
+import { Home1Component } from './pages/home1/home1.component';
 const routes: Routes = [
   // Ứng dụng phía máy chủ: (admin)
    {
@@ -22,6 +23,7 @@ const routes: Routes = [
      component: LayoutAdminComponent,
      children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+      
       { path: 'dashboard', component: DashboardComponent },
       { path: 'product-list', component: ProductAdminListComponent },
       { path: 'product-create', component: ProductAdminCreateComponent },
@@ -53,7 +55,8 @@ const routes: Routes = [
   //   path: '**',
   //   component: NotFoundComponent,
   // },
-  { path: '', component: HomeComponent },
+  { path: '', component: Home1Component },
+  { path: 'home', component: Home1Component },
   { path: 'product', component: ProductListComponent },
   {path: 'product/:id', component: DetailproductComponent},
   { path: 'lienhe', component: LienheComponent },

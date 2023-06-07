@@ -54,8 +54,7 @@ const products: Product[] = [
       name: 'Giày Balenciaga',
       price: 500,
       description: 'Giày Balenciaga Triple S – Màn khai pháo đã mang Balenciaga – một thương hiệu thời trang cao cấp lần đầu tiên đặt chân lên vùng đất Sneaker màu mỡ',
-      imgUrl:
-        'https://kiza.vn/media/wysiwyg/Giay-balenciaga-triple-s-vang-02.jpg',
+      imgUrl:'https://topcomshop.com/uploads/images/a-a-giay-re/6/11647045837-242872808.jpg',
     },
     {
       id: '8',
@@ -63,7 +62,7 @@ const products: Product[] = [
       price: 400,
       description: 'Sử dụng thiết kế cổ điển với gam màu đen trắng đơn giản, kết hợp chất liệu vải Canvas cùng Da lộn ở mũi và gót giày, Vans Old Skool Classic Black White',
       imgUrl:
-        'https://kiza.vn/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/v/a/vans-old-phoi-mau-den-trang-004.jpg',
+        'https://topcomshop.com/uploads/images/a-a-giay-re/6/11647045837-242872808.jpg',
     },
     {
       id: '9',
@@ -95,7 +94,7 @@ const products: Product[] = [
       price: 600,
       description: 'Giày Puma X Ray Trainers là một trong mẫu giày thể thao có có thiết kế đơn giản mà rất tinh tế. Một mẫu giày mà bạn có thế sử dụng trong mọi hoạt động',
       imgUrl:
-        'https://kiza.vn/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/p/u/puma-trang-den-01.jpg',
+        'https://myshoes.vn/image/cache/catalog/2022/puma/2.3/giay-puma-caven-nam-den-trang-01-800x800.jpg',
     },
     
   ];
