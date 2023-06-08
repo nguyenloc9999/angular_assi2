@@ -19,14 +19,14 @@ export class LoginAdminCreateComponent {
     private userService: AuthAdminService
   ) {}
   onHandleSubmit() {
-    const user: IUser = {
-      id: '',
-      username: this.userForm.value.username || '',
-      password: this.userForm.value.password || '',
-    };
+    // const user: IUser = {
+    //   id: '',
+    //   username: this.userForm.value.username || '',
+    //   password: this.userForm.value.password || '',
+    // };
 
-    this.userService.addUser(user).subscribe((user) => {
-      alert(`Thêm sản phẩm thành công: ${user.username}`);
-    });
+    // this.userService.addUser(user).subscribe((user) => {
+    //   alert(`Thêm sản phẩm thành công: ${user.username}`);
+    // });
   }
 }

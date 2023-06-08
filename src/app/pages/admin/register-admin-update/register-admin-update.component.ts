@@ -13,6 +13,7 @@ export class RegisterAdminUpdateComponent {
   user!: IUser;
   userForm = this.formBuilder.group({
     username: ['', [Validators.required, Validators.minLength(4)]],
+    email: ['', [Validators.required, Validators.email]],
     password: ['', [Validators.required, Validators.minLength(6)]],
   });
 
@@ -30,6 +31,7 @@ export class RegisterAdminUpdateComponent {
 
           this.userForm.patchValue({
             username: data.username,
+            email:data.email,
             password: data.password
           });
         },
@@ -42,6 +44,7 @@ export class RegisterAdminUpdateComponent {
       const user: IUser = {
         id: '',
         username: this.userForm.value.username || '',
+        email: this.userForm.value.email || '',
         password: this.userForm.value.password || '',
       };
 

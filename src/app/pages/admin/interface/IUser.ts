@@ -1,5 +1,11 @@
 export interface IUser {
-    id: string;
-    username: string;
-    password: string;
-  }
+  id: string;
+  email: string;
+  username: string;
+  password: string;
+}
+export interface Ilogin {
+  id: string;
+  email: string;
+  password: string;
+}
