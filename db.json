@@ -89,22 +89,32 @@
     {
       "id": "1",
       "username": "abc",
+      "email": "admin18@gmail.com",
       "password": "1234567"
     },
     {
       "id": "12",
       "username": "def",
+      "email": "admin18@gmail.com",
       "password": "12349792"
     },
     {
       "id": "3",
       "username": "hkdss",
+      "email": "admin18@gmail.com",
       "password": "1236784"
     },
     {
       "id": "4",
       "username": "djksak",
+      "email": "admin18@gmail.com",
       "password": "129370"
+    },
+    {
+      "id": "xQalFIl",
+      "username": "dhsh",
+      "email": "admin18@gmail.com",
+      "password": "123456"
     }
   ]
 }

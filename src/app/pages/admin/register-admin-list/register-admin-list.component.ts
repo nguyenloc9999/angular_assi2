@@ -19,7 +19,7 @@ export class RegisterAdminListComponent {
   }
   delete(id: string) {
     this.userService.deleteUser(id).subscribe(() => {
-      this.users = this.users.filter((product) => product.id !== id);
+      this.users = this.users.filter((user) => user.id !== id);
     });
   }
 }

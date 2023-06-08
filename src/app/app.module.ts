@@ -25,13 +25,9 @@ import { LayoutComponent } from './layouts/layout/layout.component';
 import { LayoutAdminComponent } from './layouts/layout-admin/layout-admin.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { LoginAdminListComponent } from './pages/admin/login-admin-list/login-admin-list.component';
-import { LoginAdminCreateComponent } from './pages/admin/login-admin-create/login-admin-create.component';
-import { LoginAdminUpdateComponent } from './pages/admin/login-admin-update/login-admin-update.component';
-import { LoginAdminDetailComponent } from './pages/admin/login-admin-detail/login-admin-detail.component';
 import { RegisterAdminListComponent } from './pages/admin/register-admin-list/register-admin-list.component';
-import { RegisterAdminUpdateComponent } from './pages/admin/register-admin-update/register-admin-update.component';
+import { TintucComponent } from './pages/tintuc/tintuc.component';
 import { RegisterAdminCreateComponent } from './pages/admin/register-admin-create/register-admin-create.component';
-import { RegisterAdminDetailComponent } from './pages/admin/register-admin-detail/register-admin-detail.component';
 
 @NgModule({
   declarations: [
@@ -54,13 +50,9 @@ import { RegisterAdminDetailComponent } from './pages/admin/register-admin-detai
     LayoutAdminComponent,
     DashboardComponent,
     LoginAdminListComponent,
-    LoginAdminCreateComponent,
-    LoginAdminUpdateComponent,
-    LoginAdminDetailComponent,
     RegisterAdminListComponent,
-    RegisterAdminUpdateComponent,
+    TintucComponent,
     RegisterAdminCreateComponent,
-    RegisterAdminDetailComponent,
   ],
   imports: [
     BrowserModule,
