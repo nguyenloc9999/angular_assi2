@@ -13,6 +13,8 @@ export class RegisterAdminListComponent {
     this.userService.getUsers().subscribe(
       (data) => {
         this.users = data;
+        // console.log(this.users);
+        
       },
       (error) => console.log(error.message)
     );

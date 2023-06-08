@@ -11,6 +11,7 @@ import { IUser } from '../interface/IUser';
 export class RegisterAdminCreateComponent {
   userForm = this.formBuilder.group({
     username: ['', [Validators.required, Validators.minLength(4)]],
+    email: ['', [Validators.required, Validators.email]],
     password: ['', [Validators.required, Validators.minLength(6)]],
   });
 
@@ -22,7 +23,8 @@ export class RegisterAdminCreateComponent {
     const user: IUser = {
       id: '',
       username: this.userForm.value.username || '',
-      password: this.userForm.value.password || 0,
+      email: this.userForm.value.email || '',
+      password: this.userForm.value.password || '',
     };
 
     this.userService.addUser(user).subscribe((user) => {

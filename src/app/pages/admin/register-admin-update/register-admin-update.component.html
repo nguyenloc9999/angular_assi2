@@ -1,6 +1,7 @@
 <div class="container">
     <form (ngSubmit)="onHandleSubmit()" [formGroup]="userForm">
       <input type="text" formControlName="username" placeholder="Username" />
+      <input type="text" formControlName="email" placeholder="email" />
       <input type="text" formControlName="password" placeholder="Password" />
       <button>Cập nhật</button>
     </form>

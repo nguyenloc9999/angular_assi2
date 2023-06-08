@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IUser } from '../interface/IUser';
+import { IUser, Ilogin } from '../interface/IUser';
 import { FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { AuthAdminService } from '../services/auth-admin.service';
@@ -10,9 +10,9 @@ import { AuthAdminService } from '../services/auth-admin.service';
   styleUrls: ['./login-admin-update.component.css']
 })
 export class LoginAdminUpdateComponent {
-  user!: IUser;
+  user!: Ilogin;
   userForm = this.formBuilder.group({
-    username: ['', [Validators.required, Validators.minLength(4)]],
+    email: ['', [Validators.required, Validators.minLength(4)]],
     password: ['', [Validators.required, Validators.minLength(6)]],
   });
 
@@ -29,7 +29,7 @@ export class LoginAdminUpdateComponent {
           this.user = data;
 
           this.userForm.patchValue({
-            username: data.username,
+            email: data.username,
             password: data.password
           });
         },
@@ -38,17 +38,17 @@ export class LoginAdminUpdateComponent {
     });
   }
   onHandleSubmit() {
-    if (this.userForm.valid) {
-      const user: IUser = {
-        id: '',
-        username: this.userForm.value.username || '',
-        password: this.userForm.value.password || '',
-      };
+    // if (this.userForm.valid) {
+    //   const user: Ilogin = {
+    //     id: '',
+    //     email: this.userForm.value.email || '',
+    //     password: this.userForm.value.password || '',
+    //   };
 
-      this.userService.updateUser(user).subscribe((user) => {
-        console.log(user);
-        console.log('user', user);
-      });
-    }
+    //   this.userService.updateUser(user).subscribe((user) => {
+    //     console.log(user);
+    //     console.log('user', user);
+    //   });
   }
 }
+
